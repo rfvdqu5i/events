@@ -25,9 +25,7 @@ class EventController extends Controller
     
     public function store(Request $request)
     {
-        
         Event::create($request->all());
-        dd($request);
         return redirect(route('events.index'));
     }
     
